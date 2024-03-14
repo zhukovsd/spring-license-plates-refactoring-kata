@@ -1,0 +1,9 @@
+GET http://localhost:8080/license-plates
+
+###
+
+GET http://localhost:8080/license-plates/count
+
+###
+
+POST http://localhost:8080/license-plates/issue?count=1

@@ -1,0 +1,26 @@
+GET http://localhost:8080/cars
+
+###
+
+GET http://localhost:8080/cars?onlyWithoutLicensePlate=true
+
+###
+
+POST http://localhost:8080/car
+Content-Type: application/x-www-form-urlencoded
+
+vin=12345678901234570&model=ModelM&yearOfManufacture=2019&color=black
+
+### assign license plate to car
+
+POST http://localhost:8080/car/12345678901234567/license-plate
+Content-Type: application/x-www-form-urlencoded
+
+number=0009
+
+### unassign license plate from car
+
+POST http://localhost:8080/car/12345678901234567/license-plate
+Content-Type: application/x-www-form-urlencoded
+
+number=
